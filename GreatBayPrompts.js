@@ -61,6 +61,7 @@ function itemToBidOn() {
         ])
         .then(function (inquirerResponse) {
                     console.log(`How much would you like to bid for ${itemToBidOn}?`)
+                    howMuchToBid();
             }
         );
 }
