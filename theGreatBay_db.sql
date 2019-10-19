@@ -5,7 +5,7 @@ CREATE DATABASE theGreatBay_db;
 USE theGreatBay_db;
 
 CREATE TABLE items (
-  id INT NOT NULL AUTO_ICREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   item_name VARCHAR(30) NOT NULL,
   price DECIMAL(10,2) NULL,
   PRIMARY KEY (id)
