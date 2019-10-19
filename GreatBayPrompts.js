@@ -36,11 +36,16 @@ function itemToPost() {
             {
                 type: 'input',
                 message: 'What item would you like to post?',
-                name: 'itemToPost',
+                name: 'item_name',
+            },
+            {
+                type: 'input',
+                message: 'What is the price of this item?',
+                name: 'price',
             }
         ])
         .then(function (inquirerResponse) {
-                    console.log(`${itemToPost} has been posted!`)
+                    console.log(`${item_name} has been posted for ${price}!`)
             }
         );
 }
@@ -59,6 +64,22 @@ function itemToBidOn() {
             }
         );
 }
+
+function howMuchToBid() {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: 'How much would you like to bid?',
+                name: 'bidAmount',
+            }
+        ])
+        .then(function (inquirerResponse) {
+                    console.log(`You have bid ${bidAmount}?`)
+            }
+        );
+}
+
 
 
 initialQuestion();
